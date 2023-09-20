@@ -1,7 +1,12 @@
-<script setup></script>
+<script setup>
+import Sidebar from "./components/Sidebar.vue";
+</script>
 
 <template>
-  <div class="text-lg font-bold">Hallo Folks!</div>
+  <div class="flex">
+    <Sidebar />
+    <router-view></router-view>
+  </div>
 </template>
 
 <style scoped></style>
